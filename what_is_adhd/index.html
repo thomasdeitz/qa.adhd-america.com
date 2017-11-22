@@ -112,12 +112,9 @@
       <div class="col-2 col-sm-12">
       <a  href="https://thomasdeitz.github.io/qa.adhd-america.com/" 
           title="Go to homepage.">
-        <svg filter="url(#shadow)" class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 480 270" style="enable-background:new 0 0 480 270;" xml:space="preserve">
 <defs>
-	<filter id="shadow">
-		<feDropShadow dx="0" dy="0" stdDeviation="0" />
-	</filter>
 </defs>
 	 	<polygon class="accent" points="147.7,214 116,266.4 202.8,214 	"/>
 	<g>
@@ -188,7 +185,8 @@
   function d(){
     var body = document.getElementsByTagName("body");
     var stepOne = document.getElementById("contactForm").childNodes[1];
-body[0].classList.remove('open');
+
+    body[0].classList.remove('open');
     body[0].classList.toggle('contact');
     stepOne.classList.add("active");
     stepOne.getElementsByTagName("input")[0].focus();
@@ -196,20 +194,16 @@ body[0].classList.remove('open');
 
 function step(step){
     console.log('clicked')
-    
-    //var body = document.getElementsByTagName("body");
     var stepNum = document.getElementById(step);
     var f = document.getElementsByTagName("FORM")[0];
-  console.log(f)
+    console.log(f)
     var divs = f.getElementsByTagName("div");
     [].forEach.call(divs, function(div) {
-  // do whatever
-  div.classList.remove("active");
-});
+        div.classList.remove("active");
+    });
   
     stepNum.classList.add("active");
     stepNum.getElementsByTagName("input")[0].focus();
-    //console.log(stepNum);
     return false;
 }
 
@@ -226,12 +220,12 @@ document.addEventListener('keyup', function (e) {
     checkTabPress(e);
 }, false);
 
-function review(){
-  var body = document.getElementsByTagName("body");
-    console.log('review');
-    body[0].classList.toggle('review');
-    return false;
-}
+    function review(){
+    var body = document.getElementsByTagName("body");
+        console.log('review');
+        body[0].classList.toggle('review');
+        return false;
+    }
 </script>
       </div>
       <span onclick="c()"></span>
@@ -261,73 +255,91 @@ function review(){
       <dd>A set of processes that all have to do with managing oneself and one's resources in order to achieve a goal. It is an umbrella term for the neurologically-based skills
     involving mental control and self-regulation.</dd>
     </dl>
-    </article>
-    </div>
-    <div class="container">
-<article class="columns columns-2"></article>
-  <article class="columns columns-8">
-<p>For children with ADHD, school too often starts with failure
-
-
-The consequences only magnify as time progresses into
-adulthood, if untreated
-
-
-The following statistics are alarming, considering children
-with ADHD compose approximately <b>10%</b> of the school-age
-population.</p>
-</article>
-  <article class="columns columns-12">
-<h3>The Early Years</h3>
-<div class="grid">
-<span><h1>50%</h1><small>Repeat a grade by adolescence</small></span>
-
-<span><h1>10x</h1> <small>More likely to have difficulties with friendships 
-<br>(20.6% vs. 2.0%)</small></span>
-
-<span><h1>80%</h1> <small>Are two years behind academically by age 11.</small></span>
-
-<span><h1>46%</h1> <small>Of children with ADHD have been suspended</small></span>
-</div>
-<h3>Higher Education</h3>
-
-<div class="grid">
-<span><h1>>30%</h1><small>graduate from a 4
-year institution</small></span>
-
-<span><h1>82%</h1> <small>took on average 10
-years to graduate</small></span>
-
-<span><h1>↓GPA</h1> <small>While attending a
-university</small></span>
-
-<span><h1>35%</h1> <small>eventually drop out</small></span>
-</div>
-
-<h3>Social Costs</h3>
-<div class="grid">
-<span><h1 style="font-size: 5vmin">4-9x</h1><small>more likely to commit crimes and go to jail</small></span>
-
-<span><h1 style="font-size: 5vmin">143.8m</h1> <small>Days of lost productivity acrooss 10 nations</small></span>
-
-<span><h1 style="font-size: 5vmin">21-45%</h1> <small>of prisoners have ADHD
-according to 15 studies from peer reviewed
-journals</small></span>
-
-<span><h1 style="font-size: 5vmin">$36-$52b</h1> <small>estimated annual societal "cost of illness"</small></span>
-</div>
-
-
-<!-- The annual average direct cost for
-each per ADHD patient was
-$1,574, compared to $541 among
-matched controls.
-
-The annual societal ‘‘cost of illness’’
-for ADHD is estimated to be between
-$36 and $52 billion, in 2005 dollars. -->
   </article>
 </div>
+
+<div class="container">
+  <article class="columns columns-2"></article>
+  <article class="columns columns-8">
+    <p>For children with ADHD, school too often starts with failure. The consequences only magnify as time progresses into
+adulthood, if untreated. The following statistics are alarming, considering children
+with ADHD compose approximately <b>10%</b> of the school-age
+population.</p>
+  </article>
+  <article class="columns columns-12">
+    <h3>The Early Years</h3>
+    <div class="grid">
+      <span>
+        <h1>50%</h1>
+        <small>Repeat a grade by adolescence</small>
+      </span>
+
+      <span>
+        <h1>10x</h1>
+        <small>More likely to have difficulties with friendships 
+        <br>(20.6% vs. 2.0%)</small>
+      </span>
+
+      <span>
+        <h1>80%</h1>
+        <small>Are two years behind academically by age 11.</small>
+      </span>
+
+      <span>
+        <h1>46%</h1>
+        <small>Of children with ADHD have been suspended</small>
+      </span>
+    </div>
+
+    <h3>Higher Education</h3>
+    <div class="grid">
+      <span>
+        <h1>>30%</h1>
+        <small>graduate from a 4 year institution</small>
+      </span>
+
+      <span>
+        <h1>82%</h1>
+        <small>took on average 10 years to graduate</small>
+      </span>
+
+      <span>
+        <h1>↓GPA</h1>
+        <small>While attending a university</small>
+      </span>
+
+      <span>
+        <h1>35%</h1>
+        <small>eventually drop out</small>
+      </span>
+    </div>
+
+    <h3>Social Costs</h3>
+    <div class="grid">
+      <span>
+        <h1 style="font-size: 5vmin">4-9x</h1>
+        <small>more likely to commit crimes and go to jail</small>
+      </span>
+
+      <span>
+        <h1 style="font-size: 5vmin">143.8m</h1>
+        <small>Days of lost productivity acrooss 10 nations</small>
+      </span>
+
+      <span>
+        <h1 style="font-size: 5vmin">21-45%</h1>
+        <small>of prisoners have ADHD according to 15 studies from peer reviewed journals</small>
+      </span>
+
+      <span>
+        <h1 style="font-size: 5vmin">$36-$52b</h1>
+        <small>estimated annual societal "cost of illness"</small>
+      </span>
+    </div>
+
+  </article>
+</div>
+
 <style>
   .logo {
     * {
@@ -356,8 +368,9 @@ dt {
   }
   h3 {text-align:center;}
   .grid {
+    overflow:hidden;
     text-align:center;
-      display: flex;
+    display: flex;
     flex-direction:row;
     justify-content: space-between;
     padding: 3vmin 0;
@@ -386,8 +399,8 @@ dt {
     <footer id="siteFooter">
   <div class="container">
     <div class="col-12">
-  <small>Copyright ©2017</small>
-  </div>
+    <small>Copyright ©2017</small>
+    </div>
   </div>
 </footer>
   </body>
