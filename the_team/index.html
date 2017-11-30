@@ -242,12 +242,13 @@ document.addEventListener('keyup', function (e) {
       
       
   <div class="marquee">
-    <div class="image" style="background-image:url(https://static.pexels.com/photos/287398/pexels-photo-287398.jpeg);"></div>
+    <div class="image" style="background-image:url(13445778_1062710463810153_7143316159065151816_n.jpg);"></div>
     
 
     
       <div class="container">
-        <div class="columns columns-12">
+        <div class="columns columns-1"></div>
+<div class="columns columns-10">
 
   <h1>Join the Team</h1>
 
@@ -261,7 +262,7 @@ document.addEventListener('keyup', function (e) {
       <section id="theMission">
   <div class="container">
     <div class="columns-2"></div>
-    <div class="columns-8" style="text-align:center !important">
+    <div class="columns-8">
       <h1>The Mission</h1><p><strong>Our mission, together with adhd america, is to make a difference in the lives of those impacted by this disorder.</strong></p>
 <p>We believe that many parents, particularly those in underserved communities, are unaware of the consequences ADHD can have on the lives of their children. Parents also need to understand their legal rights to advocate on behalf of their children for school accommodations. In addition, they need to be aware of the side effects of ADHD medication, both physically and mentally.</p>
 
@@ -269,6 +270,11 @@ document.addEventListener('keyup', function (e) {
   </div>
 </section>
 <style>
+  #theMission {
+    background-color: whiteSmoke;
+    text-align:center !important;
+  }
+
   #theMission img{
     position:absolute;
     height:100%;
@@ -282,26 +288,30 @@ document.addEventListener('keyup', function (e) {
 </style>
 <section id="isCorp">
   <div class="container">
+  <div class="columns-6"><img src="./clip111.png" height="auto" width="100%"></div>
     <div class="columns-6">
       <h1>ISCorp Jrs</h1><h1>Join the Team</h1><p>ISCorp junior development program is the longest operating cycling team with a focus on the athlete cyclist under the age of 18, is now Team ADHD America!</p>
 <p>Since its inception, ISCorp has consistently provided the the opportunity for juniors to achieve their goals. Team ADHD America will continue to develop the new program with a focus on heping juniors pursue their goals as a young aspiring cyclist.</p>
 
     </div>
-    <div class="columns-2"></div>
+    
   </div>
 </section>
+<style>
+
+</style>
 <section id="awareness" style="background: black; color: white">
   <div class="container">
+    <div class="columns-6"></div>
     <div class="columns-6">
       <h1>Lifting Awareness</h1><p>As adult cyclists, along with the most successful juniors team in WI, we are motivated to lift the awareness of parents, teachers, administrators, and future employers, as to the positive effect ADHD America is having on the lives of school-aged children diagnosed with ADHD.</p>
 
     </div>
-    <div class="columns-6"></div>
   </div>
 </section>
-<section id="theApp" style="background: whiteSmoke">
+<section id="theApp">
   <div class="container">
-    <div class="columns-2"></div>
+    <div class="columns-4"></div>
     <div class="columns-8">
       <h1>The App</h1><p>Your donations will also go towards the distribution of the <strong>ADHDmyWay</strong> smartphone application for kids</p>
 <ul>
@@ -311,21 +321,6 @@ document.addEventListener('keyup', function (e) {
 <li>Information doctors can use to fine tune treatment methods</li>
 <li>Minimizes the impact of side effects</li>
 <li>Helps prepare those with ADHD to succeed in college, tech school, and beyond</li>
-</ul>
-
-    </div>
-  </div>
-</section>
-<section id="support" style="background: black; color: white">
-  <div class="container">
-    <div class="columns-2"></div>
-    <div class="columns-8">
-      <h1>Your Support</h1><p>As a 501(c)(3) non-for profit organization, your charitable donation goes to supporting the mission of ADHD America. Every contribution enables you to take full advantage of those tax benefits afforded to supporting such a cause. </p>
-<ul>
-<li><p>For a minimum contribution of $1,000, your organization will be featured on the ADHD America and Team ADHD America web site (<a href="http://adhdamerica.org">http://adhdamerica.org</a>) </p>
-</li>
-<li><p>For a contribution of $5,000 or more, your organization will be featured in both the website and on the official ADHD America funkier cycling kit, as well as on official team swag (t-shirts, water bottles, etc.)</p>
-</li>
 </ul>
 
     </div>
@@ -401,6 +396,90 @@ document.addEventListener('keyup', function (e) {
     </div>
   </div>
 </section>
+<section id="support" style="background: whiteSmoke">
+  <div class="container">
+    <div class="columns-1"></div>
+    <div class="columns-10">
+      <h1>Your Support</h1><p>As a 501(c)(3) non-for profit organization, your charitable donation goes to supporting the mission of ADHD America. Every contribution enables you to take full advantage of those tax benefits afforded to supporting such a cause. </p>
+<ul>
+<li><ul>
+<li><strong>Base</strong></li>
+<li><h1>$1,000</h1>Min Contribution</li>
+<li><strong>Featured on</strong></li>
+<li>Our Website</li>
+</ul>
+</li>
+<li><ul>
+<li><strong>Team</strong></li>
+<li><h1>$5,000</h1>And Above</li>
+<li><strong>Featured on</strong></li>
+<li>Our Website </li>
+<li>Team Cycling Kit</li>
+<li>Official Team Swag</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  #support{
+    text-align:center;
+  }
+
+  #support p {
+    text-align:center
+  }
+
+  #support ul{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    padding:0px;
+    margin:0px;
+    list-style: none;
+  }
+
+  #support li {
+    background-color: white;
+    display: inline-block;
+    margin:10px;
+    padding:0;
+    width: 40%;
+  }
+
+#support ul ul {
+  flex-direction: column;
+  width:100%;
+  margin:0;
+
+}
+
+  #support li li {
+    padding:15px 10px;
+    box-sizing:border-box;
+    width:100%;
+    margin:0;
+    border-bottom:1px solid whiteSmoke;
+  }
+
+  #support li li:first-child {
+    background-color: #B23E43;
+    color:white;
+  }
+
+  #support li:last-child li:first-child {
+    background-color: #172C5D;
+    color:white;
+  }
+
+  #support li:last-child li h1 {
+    color: #172C5D;
+  }
+</style>
+
 
 <style>
   .image {
